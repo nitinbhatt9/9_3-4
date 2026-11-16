@@ -1,0 +1,24 @@
+{
+  "name": "harrypotterbackend",
+  "version": "1.0.0",
+  "description": "Authorised by Nitin Bhatt..!!!",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Nitin Bhatt",
+  "license": "ISC",
+  "dependencies": {
+    "@imagekit/nodejs": "^7.14.0",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "mongoose": "^9.12.1",
+    "multer": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
