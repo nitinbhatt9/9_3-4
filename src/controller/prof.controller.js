@@ -39,3 +39,17 @@ const Harry = async (req, res) => {
 };
 
 export default Harry;
+
+export const getHarry = async (req, res) => {
+  try {
+    const AllChar = await Hogwarts.find();
+    return res.status(200).json({
+      success: true,
+      totalCharacters: AllChar.length,
+      message: "Hogwarts Are Here..!!!",
+      Data: AllChar,
+    });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+};

@@ -13,9 +13,12 @@ const port = process.env.PORT || 3001;
 
 app.use(express.json());
 
-app.use("/api/v1/harrydata", Harrypotter);
-
 spawn();
+app.get("/potter", (req, res) => {
+  res.json({ message: "Omnitrix successor" });
+});
+
+app.use("/api/v1/harrydata", Harrypotter);
 
 app.listen(port, () => {
   console.log(`Server Is Running On Port http://localhost:${port}`);
